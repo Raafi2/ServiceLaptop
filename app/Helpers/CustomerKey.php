@@ -4,9 +4,6 @@ namespace App\Helpers;
 
 class CustomerKey
 {
-    /**
-     * Normalisasi nama untuk name_key: huruf kecil, spasi tunggal, trim
-     */
     public static function normalizeName(string $name): string
     {
         $clean = preg_replace('/\s+/', ' ', trim($name));
@@ -15,8 +12,7 @@ class CustomerKey
     }
 
     /**
-     * Normalisasi no. HP: ubah +62 atau 62 menjadi awalan 08
-     * Contoh: +6281234567890 -> 081234567890, 6281234567890 -> 081234567890
+     * Normalisasi no. HP: ubah awalan +62/62 menjadi 08
      */
     public static function normalizePhone(string $phone): string
     {
@@ -29,15 +25,11 @@ class CustomerKey
         return $digits;
     }
 
-    /**
-     * Validasi format dan panjang digit no HP (8 sampai 15 digit)
-     */
     public static function isValidPhone(string $phone): bool
     {
         $digits = self::normalizePhone($phone);
         $len = strlen($digits);
 
-        // Cek minimal ada 1 digit numerik setelah normalize
         if (! preg_match('/^\d+$/', $digits)) {
             return false;
         }

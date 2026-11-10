@@ -32,12 +32,10 @@ Route::middleware('auth')->group(function () {
         Route::put('/servis/{nomor}', [ServiceController::class, 'update'])->name('services.update');
         Route::post('/servis/{nomor}/serahkan', [ServiceController::class, 'handOver'])->name('services.handover');
 
-        // Pelanggan
         Route::get('/pelanggan/petunjuk', [CustomerController::class, 'hint'])->name('customers.hint');
         Route::get('/pelanggan', [CustomerController::class, 'index'])->name('customers.index');
         Route::put('/pelanggan/{id}', [CustomerController::class, 'update'])->name('customers.update');
 
-        // Teknisi
         Route::get('/teknisi', [TechnicianController::class, 'index'])->name('technicians.index');
         Route::post('/teknisi', [TechnicianController::class, 'store'])->name('technicians.store');
         Route::put('/teknisi/{id}', [TechnicianController::class, 'update'])->name('technicians.update');

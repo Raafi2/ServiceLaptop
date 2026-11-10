@@ -4,12 +4,7 @@ namespace App\Helpers;
 
 class MaskedName
 {
-    /**
-     * Samarkan nama untuk tampilan publik:
-     * "Budi" -> "Budi"
-     * "Budi Santoso" -> "Budi S."
-     * "Muhammad Budi Santoso" -> "Muhammad B."
-     */
+    // Samarkan tiap kata dengan asterisk kecuali huruf pertama (cth: "Budi Santoso" -> "B*** S******")
     public static function mask(string $name): string
     {
         $parts = preg_split('/\s+/', trim($name), -1, PREG_SPLIT_NO_EMPTY);

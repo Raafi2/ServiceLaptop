@@ -29,7 +29,6 @@
         .page { width: 1440px; margin: 0 auto; background: var(--bg); display: flex; flex-direction: column; align-items: flex-start; }
         .page > * { flex-shrink: 0; width: 100%; }
 
-        /* Navbar */
         .navbar { background: #fff; border-bottom: 0.667px solid var(--border); display: flex; gap: 282px; align-items: center; padding: 16px 29px; overflow: hidden; }
         .brand { display: flex; gap: 10px; align-items: center; }
         .brand .logo { width: 44px; height: 44px; border-radius: 8px; overflow: hidden; }
@@ -43,7 +42,6 @@
         .btn-sm.primary { background: var(--navy); color: #fff; }
         .btn-sm.outline { border-color: var(--strong); }
 
-        /* Hero */
         .hero { position: relative; display: flex; gap: 64px; align-items: center; padding: 80px 80px 96px; overflow: hidden; }
         .hero-text { width: 640px; display: flex; flex-direction: column; gap: 27px; align-items: flex-start; overflow: hidden; }
         .hero-text h1 { font-weight: 600; font-size: 56px; line-height: 62px; letter-spacing: -1.12px; min-width: 100%; }
@@ -56,7 +54,6 @@
         .chip strong { font-weight: 600; }
         .chip span { font-weight: 400; color: var(--muted); }
 
-        /* Cek status */
         .cek { background: #fff; padding: 120px 80px; overflow: hidden; }
         .cek-inner { display: flex; gap: 96px; align-items: center; width: 100%; overflow: hidden; }
         .cek-inner > img { width: 480px; height: 360px; object-fit: cover; flex-shrink: 0; }
@@ -69,7 +66,6 @@
         .field input::placeholder { color: var(--faint); opacity: 1; }
         .btn-lg { height: 60px; width: 100%; flex-shrink: 0; background: var(--navy); border: 0.667px solid transparent; border-radius: 12px; padding: 0 14px; display: flex; align-items: center; justify-content: center; font-family: 'Inter', sans-serif; font-weight: 500; font-size: 17px; line-height: 20px; color: #fff; cursor: pointer; }
 
-        /* Status preview */
         .status { background: var(--subtle); padding: 120px 80px; overflow: hidden; }
         .status-inner { width: 1280px; display: flex; gap: 96px; align-items: center; overflow: hidden; }
         .status-text { flex: 1 0 0; min-width: 1px; display: flex; flex-direction: column; gap: 24px; align-items: flex-start; overflow: hidden; }
@@ -103,7 +99,6 @@
         .tl-body .note { font-weight: 400; font-size: 12px; line-height: 16px; color: var(--muted); }
         .t-foot { display: flex; align-items: center; justify-content: flex-end; }
 
-        /* Keunggulan */
         .adv { background: var(--surface); border-top: 0.667px solid var(--border); padding: 104px 80px; }
         .adv h2 { font-weight: 600; font-size: 36px; line-height: 26px; letter-spacing: -0.1px; color: #1c1917; white-space: nowrap; margin-bottom: 56px; }
         .adv-rows { display: flex; flex-direction: column; gap: 56px; width: 100%; }
@@ -113,7 +108,6 @@
         .adv-col .ttl { font-weight: 600; font-size: 24px; line-height: 1.3; width: 100%; }
         .adv-col .txt { font-weight: 400; font-size: 17px; line-height: 1.5; color: var(--muted); width: 100%; }
 
-        /* Footer */
         .info { background: var(--navy); padding: 88px 80px; }
         .info-inner { display: flex; gap: 64px; align-items: flex-start; width: 100%; }
         .info-left { width: 320px; display: flex; flex-direction: column; gap: 12px; align-self: stretch; }

@@ -88,9 +88,6 @@ class Service extends Model
         return $this->hasMany(ServiceLog::class)->orderBy('created_at', 'asc');
     }
 
-    /**
-     * Scope filter pencarian: nama pelanggan, no. HP, laptop, Teknisi, nomor lacak
-     */
     public function scopeSearch(Builder $query, ?string $q): Builder
     {
         if (blank($q)) {
@@ -112,9 +109,6 @@ class Service extends Model
         });
     }
 
-    /**
-     * Scope filter status: 'Aktif' (dikerjakan + selesai), 'Semua', atau status tunggal
-     */
     public function scopeStatusFilter(Builder $query, ?string $filter): Builder
     {
         if (blank($filter) || $filter === 'Aktif') {
